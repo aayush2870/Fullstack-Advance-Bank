@@ -1,0 +1,145 @@
+/* General styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right,#d8a456, #74bb7e );  /* Light background for the whole page */
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* App container */
+.App {
+  max-width: 900px;
+  margin: 30px auto; /* Center the app with more margin from the top */
+  padding: 30px;
+  background: linear-gradient(to right, #4040a7, #4d4545); 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  color: #151618; /* Darker gray for main headings */
+  margin-bottom: 20px;
+  
+}
+
+h2 {
+  font-size: 1.75em;
+  color: #343a40; /* Slightly lighter gray for subheadings */
+  margin: 20px 0 15px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  color: #495057; /* Medium gray for paragraphs */
+  margin: 15px 0;
+}
+
+/* Input fields */
+input {
+  padding: 12px;
+  border: 1px solid #ced4da; /* Lighter border color */
+  border-radius: 6px;
+  width: calc(100% - 24px);
+  margin-bottom: 12px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff; /* Blue background for buttons */
+  color: #ffffff;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
+
+button:disabled {
+  background-color: #6c757d; /* Gray background for disabled buttons */
+  cursor: not-allowed;
+}
+
+/* Error messages */
+.error {
+  color: #dc3545; /* Red color for error messages */
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff; /* White background for list items */
+  border: 1px solid #e9ecef; /* Light gray border for list items */
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Links */
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Containers and sections */
+.container {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: limegreen;
+}
+
+.section-title {
+  font-size: 1.5em;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
